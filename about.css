@@ -1,0 +1,460 @@
+/* =====================================================
+   الشيخ أحمد إسماعيل الفشني - About Page Styles
+   ===================================================== */
+
+/* ============== Page Header ============== */
+.page-header {
+    position: relative;
+    padding: 150px 0 100px;
+    background: var(--gradient-green);
+    overflow: hidden;
+}
+
+.page-header-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle at 20% 50%, rgba(201, 162, 39, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(201, 162, 39, 0.1) 0%, transparent 40%);
+}
+
+.page-header-content {
+    position: relative;
+    text-align: center;
+    color: var(--text-light);
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    color: var(--primary-gold-light);
+}
+
+.breadcrumb a {
+    color: var(--primary-gold-light);
+    transition: var(--transition-normal);
+}
+
+.breadcrumb a:hover {
+    color: var(--primary-gold);
+}
+
+.page-title {
+    font-family: var(--font-calligraphy);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.title-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: var(--primary-gold);
+    border-radius: var(--radius-full);
+    color: var(--primary-green-dark);
+}
+
+.page-subtitle {
+    font-size: 1.2rem;
+    color: var(--primary-gold-light);
+}
+
+.page-header-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+}
+
+.page-header-wave svg {
+    width: 100%;
+    height: 80px;
+}
+
+/* ============== About Main Section ============== */
+.about-main {
+    padding: var(--spacing-xl) 0;
+    background: var(--bg-primary);
+}
+
+.about-content-grid {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: var(--spacing-xl);
+    align-items: start;
+}
+
+/* ============== Profile Card ============== */
+.profile-card {
+    background: var(--bg-card);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    text-align: center;
+    box-shadow: var(--shadow-lg);
+    position: sticky;
+    top: 120px;
+}
+
+.profile-frame {
+    margin-bottom: 1.5rem;
+}
+
+.profile-image {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 1rem;
+    background: var(--gradient-green);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid var(--primary-gold);
+    box-shadow: var(--shadow-gold);
+    overflow: hidden;
+}
+
+.profile-image.has-photo {
+    background: transparent;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.profile-image i {
+    font-size: 5rem;
+    color: var(--primary-gold);
+}
+
+.profile-decoration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.profile-decoration .deco-line {
+    width: 50px;
+    height: 2px;
+    background: var(--primary-gold);
+}
+
+.profile-decoration .deco-star {
+    color: var(--primary-gold);
+    font-size: 1rem;
+}
+
+.profile-name {
+    font-family: var(--font-calligraphy);
+    font-size: 1.8rem;
+    color: var(--primary-green);
+    margin-bottom: 0.5rem;
+}
+
+.profile-title {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.profile-social {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.social-btn {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-full);
+    font-size: 1.2rem;
+    transition: var(--transition-normal);
+}
+
+.social-btn.facebook {
+    background: #1877f2;
+    color: white;
+}
+
+.social-btn.youtube {
+    background: #ff0000;
+    color: white;
+}
+
+.social-btn.telegram {
+    background: #0088cc;
+    color: white;
+}
+
+.social-btn.whatsapp {
+    background: #25d366;
+    color: white;
+}
+
+.social-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+/* ============== Bio Content ============== */
+.bio-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.bio-section {
+    background: var(--bg-card);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-md);
+    box-shadow: var(--shadow-md);
+}
+
+.bio-section h3 {
+    font-family: var(--font-decorative);
+    font-size: 1.4rem;
+    color: var(--primary-green);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.bio-section h3 i {
+    color: var(--primary-gold);
+}
+
+.bio-section p {
+    font-size: 1.05rem;
+    line-height: 2;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.bio-section p:last-child {
+    margin-bottom: 0;
+}
+
+/* Media List in Bio */
+.media-list {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0;
+}
+
+.media-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    background: var(--bg-secondary);
+    border-radius: var(--radius-md);
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    border-right: 3px solid var(--primary-gold);
+}
+
+.media-list li i {
+    color: var(--primary-gold);
+    font-size: 1rem;
+    min-width: 20px;
+}
+
+.media-list li strong {
+    color: var(--primary-green-dark);
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.value-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    background: var(--bg-secondary);
+    border-radius: var(--radius-md);
+}
+
+.value-item i {
+    font-size: 1.5rem;
+    color: var(--primary-gold);
+}
+
+.value-item span {
+    font-weight: 500;
+    color: var(--primary-green-dark);
+}
+
+/* ============== Activities Section ============== */
+.activities-section {
+    padding: var(--spacing-xl) 0;
+    background: var(--bg-secondary);
+}
+
+.activities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.activity-card {
+    background: var(--bg-card);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-md);
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-normal);
+}
+
+.activity-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.activity-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient-green);
+    border-radius: var(--radius-full);
+}
+
+.activity-icon i {
+    font-size: 2rem;
+    color: var(--primary-gold);
+}
+
+.activity-card h3 {
+    font-family: var(--font-decorative);
+    font-size: 1.3rem;
+    color: var(--primary-green);
+    margin-bottom: 1rem;
+}
+
+.activity-card p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+}
+
+/* ============== Quote Section ============== */
+.quote-section {
+    padding: var(--spacing-xl) 0;
+    background: var(--gradient-green);
+}
+
+.quote-card {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: var(--spacing-lg);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-lg);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(201, 162, 39, 0.3);
+}
+
+.quote-decoration {
+    margin-bottom: 1rem;
+}
+
+.quote-decoration i {
+    font-size: 3rem;
+    color: var(--primary-gold);
+    opacity: 0.5;
+}
+
+.quote-card blockquote p {
+    font-family: var(--font-decorative);
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    color: var(--text-light);
+    line-height: 2;
+    margin-bottom: 1rem;
+}
+
+.quote-card cite {
+    font-size: 1rem;
+    color: var(--primary-gold);
+    font-style: normal;
+}
+
+/* ============== Contact CTA ============== */
+.contact-cta {
+    padding: var(--spacing-xl) 0;
+    background: var(--bg-primary);
+}
+
+.cta-content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta-content h2 {
+    font-family: var(--font-calligraphy);
+    font-size: 2.5rem;
+    color: var(--primary-green);
+    margin-bottom: 1rem;
+}
+
+.cta-content p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+/* ============== Responsive ============== */
+@media (max-width: 992px) {
+    .about-content-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .profile-card {
+        position: relative;
+        top: 0;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header {
+        padding: 120px 0 80px;
+    }
+    
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .activities-grid {
+        grid-template-columns: 1fr;
+    }
+}
